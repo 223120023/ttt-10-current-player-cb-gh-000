@@ -9,17 +9,17 @@ def turn_count(board)
 end
 def current_player(board)
   xcount=0
-  ycount=0
+  ocount=0
   board.each do |board|
     if board=="X"
       xcount+=1
-    else board=="Y"
-      ycount+=1
+    else board=="O"
+      ocount+=1
     end
   end
-  if xcount<ycount
-    return "Y"
-  else
+  if xcount<ocount
     return "X"
+  else
+    return "O"
   end
 end
