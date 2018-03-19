@@ -13,7 +13,7 @@ def current_player(board)
   board.each do |board|
     if board=="X"
       xcount+=1
-    else board=="O"
+    elsif board=="O"
       ocount+=1
     end
   end
